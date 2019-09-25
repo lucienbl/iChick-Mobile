@@ -15,28 +15,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React from "react";
-import { StyleSheet, View, Text } from "react-native";
-import { Header } from '../uiUtils';
+import Header from './Header';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-});
-
-class DashboardComponent extends React.Component {
-
-  render() {
-    return (
-      <View style={styles.container}>
-       <Header drink={78} eat={46} />
-      </View>
-    );
-  }
+export {
+  Header
 }
-
-DashboardComponent.propTypes = {
-};
-
-export default DashboardComponent;
