@@ -15,8 +15,20 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { handleActions } from "redux-actions";
+import * as storeKeys from "./storeKeys";
+import * as actions from "./actionCreators";
 
-AppRegistry.registerComponent(appName, () => App);
+const initialState = {
+  [storeKeys.KEY_ACTION]: undefined,
+};
+
+export default handleActions(
+  {
+    [actions.SET_ACTION]: (state, action) => ({
+      ...state,
+      [storeKeys.KEY_ACTION]: action.payload.param
+    }),
+  },
+  initialState
+);

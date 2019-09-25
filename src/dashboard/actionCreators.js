@@ -15,8 +15,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { createAction } from "redux-actions";
 
-AppRegistry.registerComponent(appName, () => App);
+export const SET_ACTION = "SET_ACTION";
+
+export const action = () =>
+  async (dispatch: any) => {
+    await dispatch(createAction(SET_ACTION)({ param: "TODO" }));
+  };

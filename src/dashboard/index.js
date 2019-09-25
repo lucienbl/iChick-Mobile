@@ -15,8 +15,16 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import DashboardScreen from "./DashboardContainer";
+import reducer from "./reducer";
+import { KEY_ROOT as KEY_REDUCER } from "./storeKeys";
+import * as selectors from "./selectors";
+import * as actionCreators from "./actionCreators";
 
-AppRegistry.registerComponent(appName, () => App);
+export {
+  DashboardScreen,
+  reducer,
+  KEY_REDUCER,
+  selectors,
+  actionCreators
+};

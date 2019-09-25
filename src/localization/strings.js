@@ -15,8 +15,23 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import LocalizedStrings from "react-native-localization";
 
-AppRegistry.registerComponent(appName, () => App);
+const en = require("./languages/en.json");
+
+const nonTranslatableKeys = require("./languages/en-not-translatable.json");
+
+const keys = Object.keys(nonTranslatableKeys);
+for (let i = 0; i < keys.length; ++i) {
+  const key = keys[i];
+  const value = nonTranslatableKeys[key];
+  if (!(value instanceof Array)) continue;
+  nonTranslatableKeys[key] = value.join("\n");
+}
+
+export default new LocalizedStrings({
+  en: {
+    ...en,
+    ...nonTranslatableKeys
+  }
+});

@@ -15,8 +15,22 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import DashboardComponent from "./DashboardComponent";
 
-AppRegistry.registerComponent(appName, () => App);
+const mapStateToProps = state => ({
+});
+
+class DashboardContainer extends React.Component {
+  render() {
+    return <DashboardComponent />;
+  }
+}
+
+DashboardContainer.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+export default connect(mapStateToProps)(DashboardContainer);

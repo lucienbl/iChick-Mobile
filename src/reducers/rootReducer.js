@@ -15,8 +15,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { combineReducers } from "redux";
+import { KEY_REDUCER as KEY_DASHBOARD, reducer as dashboardReducer } from "../dashboard";
 
-AppRegistry.registerComponent(appName, () => App);
+export default combineReducers({
+  [KEY_DASHBOARD]: dashboardReducer
+});
