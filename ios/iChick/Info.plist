@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -53,5 +53,44 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kanit-Black.otf</string>
+		<string>Kanit-Black.ttf</string>
+		<string>Kanit-BlackItalic.otf</string>
+		<string>Kanit-BlackItalic.ttf</string>
+		<string>Kanit-Bold.otf</string>
+		<string>Kanit-Bold.ttf</string>
+		<string>Kanit-BoldItalic.otf</string>
+		<string>Kanit-BoldItalic.ttf</string>
+		<string>Kanit-ExtraBold.otf</string>
+		<string>Kanit-ExtraBold.ttf</string>
+		<string>Kanit-ExtraBoldItalic.otf</string>
+		<string>Kanit-ExtraBoldItalic.ttf</string>
+		<string>Kanit-ExtraLight.otf</string>
+		<string>Kanit-ExtraLight.ttf</string>
+		<string>Kanit-ExtraLightItalic.otf</string>
+		<string>Kanit-ExtraLightItalic.ttf</string>
+		<string>Kanit-Italic.otf</string>
+		<string>Kanit-Italic.ttf</string>
+		<string>Kanit-Light.otf</string>
+		<string>Kanit-Light.ttf</string>
+		<string>Kanit-LightItalic.otf</string>
+		<string>Kanit-LightItalic.ttf</string>
+		<string>Kanit-Medium.otf</string>
+		<string>Kanit-Medium.ttf</string>
+		<string>Kanit-MediumItalic.otf</string>
+		<string>Kanit-MediumItalic.ttf</string>
+		<string>Kanit-Regular.otf</string>
+		<string>Kanit-Regular.ttf</string>
+		<string>Kanit-SemiBold.otf</string>
+		<string>Kanit-SemiBold.ttf</string>
+		<string>Kanit-SemiBoldItalic.otf</string>
+		<string>Kanit-SemiBoldItalic.ttf</string>
+		<string>Kanit-Thin.otf</string>
+		<string>Kanit-Thin.ttf</string>
+		<string>Kanit-ThinItalic.otf</string>
+		<string>Kanit-ThinItalic.ttf</string>
+	</array>
 </dict>
 </plist>

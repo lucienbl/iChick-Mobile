@@ -18,63 +18,49 @@
 import * as Colors from './Colors';
 
 export const temperature = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-SemiBold",
   fontSize: 64,
-  fontWeight: "600",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.BLACK
 };
 
 export const headlineBlack = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-Bold",
   fontSize: 30,
-  fontWeight: "bold",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.BLACK
 };
 
 export const infoTitle = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-SemiBold",
   fontSize: 24,
-  fontWeight: "600",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.BLACK
 };
 
 export const switchTitle = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-SemiBold",
   fontSize: 20,
-  fontWeight: "600",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.GREYISH_BROWN_DARK
 };
 
 export const cardTitle = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-SemiBold",
   fontSize: 20,
-  fontWeight: "600",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.BLACK
 };
 
 export const infoItemTitle = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-SemiBold",
   fontSize: 18,
-  fontWeight: "600",
-  fontStyle: "normal",
   letterSpacing: 0
 };
 
 export const gaugeTitle = {
-  fontFamily: "Kanit",
+  fontFamily: "Kanit-Medium",
   fontSize: 12,
-  fontWeight: "500",
-  fontStyle: "normal",
   letterSpacing: 0,
   color: Colors.BLACK
 };
