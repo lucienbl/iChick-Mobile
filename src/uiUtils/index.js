@@ -16,7 +16,9 @@
  */
 
 import Header from './Header';
+import Notification from './Notification';
 
 export {
-  Header
+  Header,
+  Notification
 }
